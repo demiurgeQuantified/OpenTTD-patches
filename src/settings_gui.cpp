@@ -2007,6 +2007,7 @@ static SettingsContainer &GetSettingsTree()
 			accounting->Add(new SettingEntry("economy.inflation"));
 			accounting->Add(new SettingEntry("economy.inflation_fixed_dates"));
 			accounting->Add(new SettingEntry("difficulty.initial_interest"));
+			accounting->Add(new SettingEntry("difficulty.initial_interest_payment"));
 			accounting->Add(new SettingEntry("difficulty.max_loan"));
 			accounting->Add(new SettingEntry("difficulty.subsidy_multiplier"));
 			accounting->Add(new SettingEntry("difficulty.subsidy_duration"));

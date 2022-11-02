@@ -81,6 +81,7 @@ struct DifficultySettings {
 	byte   industry_density;                 ///< The industry density. @see IndustryDensity
 	uint32 max_loan;                         ///< the maximum initial loan
 	byte   initial_interest;                 ///< amount of interest (to pay over the loan)
+	byte   initial_interest_payment;         ///< amount of inflation on income
 	byte   vehicle_costs;                    ///< amount of money spent on vehicle running cost
 	uint8  vehicle_costs_in_depot;           ///< amount of money spent on vehicle running cost when in depot
 	uint8  vehicle_costs_when_stopped;       ///< amount of money spent on vehicle running cost when vehicle is stopped

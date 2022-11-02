@@ -803,7 +803,7 @@ bool AddInflation(bool check_year)
 		if (check_year && (_cur_year - _settings_game.game_creation.starting_year) >= (ORIGINAL_MAX_YEAR - ORIGINAL_BASE_YEAR)) return true;
 	}
 
-	if (_economy.inflation_prices == MAX_INFLATION || _economy.inflation_payment == MAX_INFLATION) return true;
+	if (_economy.inflation_prices == MAX_INFLATION && _economy.inflation_payment == MAX_INFLATION) return true;
 
 	/* Approximation for (100 + infl_amount)% ** (1 / 12) - 100%
 	 * scaled by 65536
@@ -989,7 +989,7 @@ void StartupEconomy()
 {
 	_economy.interest_rate = _settings_game.difficulty.initial_interest;
 	_economy.infl_amount = _settings_game.difficulty.initial_interest;
-	_economy.infl_amount_pr = std::max(0, _settings_game.difficulty.initial_interest - 1);
+	_economy.infl_amount_pr = _settings_game.difficulty.initial_interest_payment;
 	_economy.fluct = GB(Random(), 0, 8) + 168;
 
 	if (_settings_game.economy.inflation && _settings_game.economy.inflation_fixed_dates) {

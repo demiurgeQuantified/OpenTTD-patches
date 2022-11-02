@@ -1285,7 +1285,10 @@ STR_CONFIG_SETTING_MAXIMUM_INITIAL_LOAN                         :Maximum initial
 STR_CONFIG_SETTING_MAXIMUM_INITIAL_LOAN_HELPTEXT                :Maximum amount a company can loan (without taking inflation into account)
 
 STR_CONFIG_SETTING_INTEREST_RATE                                :Interest rate: {STRING2}
-STR_CONFIG_SETTING_INTEREST_RATE_HELPTEXT                       :Loan interest rate; also controls inflation, if enabled
+STR_CONFIG_SETTING_INTEREST_RATE_HELPTEXT                       :Loan interest rate; also controls the inflation of costs, if enabled
+
+STR_CONFIG_SETTING_INTEREST_RATE_PAYMENT                        :Payment interest rate: {STRING2}
+STR_CONFIG_SETTING_INTEREST_RATE_PAYMENT_HELPTEXT               :If inflation is enabled, controls the rate of inflation of money earned
 
 STR_CONFIG_SETTING_RUNNING_COSTS                                :Running costs: {STRING2}
 STR_CONFIG_SETTING_RUNNING_COSTS_HELPTEXT                       :Set level of maintenance and running costs of vehicles and infrastructure
